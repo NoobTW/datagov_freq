@@ -1,0 +1,17 @@
+{
+  "name": "datagov_freq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "convert.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NoobTW",
+  "license": "MIT",
+  "dependencies": {
+    "csvtojson": "^1.1.9"
+  }
+}
