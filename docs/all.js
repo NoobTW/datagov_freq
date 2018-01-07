@@ -37,7 +37,11 @@ $(function(){
 $('body').delegate('text', 'click', function(){
 	if($(this).attr('id').startsWith('d3plus_label') && $(this).text().length === 3)
 		location.href = location.protocol + '//' + location.host + location.pathname + '?cat=' + $(this).text();
-})
+});
+
+$('h1').on('click', function(){
+	location.href = location.protocol + '//' + location.host + location.pathname;
+});
 
 function getParameterByName(name, url) {
 	if (!url) url = window.location.href;
