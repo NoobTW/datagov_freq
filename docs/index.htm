@@ -4,20 +4,56 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Document</title>
+	<title>政府開放資料平台局處單位數量呈現</title>
+	<link href="https://fonts.googleapis.com/earlyaccess/notosanstc.css" rel="stylesheet" />
 	<style>
-		svg{
-			width: 100vw;
-			height: 100vh;
+		body{
+			font-family: 'Noto Sans TC', sans-serif;
+			background: #f2f2f2;
+		}
+
+		#viz{
+			width: 95vw;
+			height: calc(95vh - 6rem);
 			font-size: 12px;
+			background: #f2f2f2;
+		}
+
+		/* rect{
+			pointer-events: none;
+		} */
+
+		text{
+			font-family: 'Noto Sans TC', sans-serif;
+		}
+
+		text[id^=d3plus_label_null]{
+			pointer-events: all;
+			cursor: pointer;
+			font-weight: 600;
+		}
+
+		h1{
+			text-align: center;
+		}
+
+		footer{
+			text-align: center;
+			font-size: .9rem;
+			color: #333;
 		}
 	</style>
 </head>
 <body>
+	<h1>政府開放資料平台局處單位數量呈現</h1>
 	<div id="viz"></div>
+	<footer>
+		資料來源：<a href="https://data.gov.tw/dataset/6564">政府資料開放平臺資料集清單</a>(<span id='lm_date'></span>) | <a href="https://github.com/NoobTW/datagov_freq">開放原始碼</a>
+	</footer>
 	<!-- <script src="https://d3js.org/d3.v3.min.js"></script> -->
 	<script src="https://d3plus.org/js/d3.js"></script>
 	<script src="https://d3plus.org/js/d3plus.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="all.js"></script>
 </body>
