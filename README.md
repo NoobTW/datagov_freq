@@ -1,6 +1,6 @@
 # Datagov Frequency
 
-A visulization of [政府資料開放平台](https://data.gov.tw) using node and D3plus. [Demo page](https://noobtw.github.io/datagov_freq).
+A visualization of [政府資料開放平台](https://data.gov.tw) using node and D3plus. [Demo page](https://noobtw.github.io/datagov_freq).
 
 ## Get latest data
 
