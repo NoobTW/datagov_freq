@@ -4,7 +4,7 @@ const fs = require('fs');
 const content = [];
 
 csv()
-.fromFile('./all.utf8.csv')
+.fromFile('./data22_mar_b.csv')
 .on('json', (d) => {
 	if(d['編號'] !== '編號'){
 		d.name = d['第一層級'] + d['第二層級'];
@@ -43,5 +43,5 @@ csv()
 		content: categoriesArr,
 		lastModified: new Date(),
 	}
-	fs.writeFileSync('./docs/data/data22.json', JSON.stringify(data), 'UTF-8');
+	fs.writeFileSync('./docs/data/data22_mar_b.json', JSON.stringify(data), 'UTF-8');
 });
