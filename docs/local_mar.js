@@ -35,8 +35,8 @@ $(function(){
 });
 
 $('body').delegate('g[id^="d3plus_group_"]', 'click', function(){
-	if($(this).text().length === 3)
-		location.href = location.protocol + '//' + location.host + location.pathname + '?cat=' + $(this).text();
+	if($(this).attr('id').split('_')[2].length === 3)
+		location.href = location.protocol + '//' + location.host + location.pathname + '?cat=' + $(this).attr('id').split('_')[2];
 });
 
 $('h1').on('click', function(){
