@@ -34,8 +34,8 @@ $(function(){
 	});
 });
 
-$('body').delegate('text', 'click', function(){
-	if($(this).attr('id').startsWith('d3plus_label') && $(this).text().length === 3)
+$('body').delegate('g[id^="d3plus_group_"]', 'click', function(){
+	if($(this).text().length === 3)
 		location.href = location.protocol + '//' + location.host + location.pathname + '?cat=' + $(this).text();
 });
 
