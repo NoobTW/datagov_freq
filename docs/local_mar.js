@@ -1,6 +1,6 @@
 $(function(){
 
-	$.getJSON('./data/data22_mar_b.json?k=2', function(res){
+	$.getJSON('./data/data22_mar_b.json?k=3', function(res){
 
 		var sample_data = res.content;
 		console.log(res.lastModified);
