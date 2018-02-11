@@ -1,3 +1,7 @@
+# DEPRECATED
+
+This repository is deprecated. Please visit [the new one](https://github.com/NoobTW/od-freq).
+
 # Datagov Frequency
 
 A visualization of [政府資料開放平台](https://data.gov.tw) using node and D3plus. [Demo page](https://noobtw.github.io/datagov_freq).
