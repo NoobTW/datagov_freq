@@ -1,3 +1,5 @@
+location.href = 'https://noobtw.github.io/od-freq';
+
 $(function(){
 
 	$.getJSON('./data/data22_mar_b.json?k=3', function(res){
